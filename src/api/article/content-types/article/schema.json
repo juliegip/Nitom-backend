@@ -25,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "Date": {
+    "Date_article": {
       "pluginOptions": {
         "i18n": {
           "localized": true

@@ -812,7 +812,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Date: Attribute.Date &
+    Date_article: Attribute.Date &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
