@@ -2,7 +2,6 @@ import path from "path";
 
 export default ({ env }) => {
   const client = env("DATABASE_CLIENT");
-  console.log("Loading development database configuration...");
   const connections = {
     postgres: {
       connection: {
