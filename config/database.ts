@@ -3,9 +3,8 @@ import path from "path";
 export default ({ env }) => {
   const client = env("DATABASE_CLIENT");
   console.log("Default Database client:", env("DATABASE_CLIENT"));
-  console.log("Database host:", env("DATABASE_HOST"));
-  console.log("Database host:", env("DATABASE_PORT"));
   console.log("Database name:", env("DATABASE_NAME"));
+  console.log("ENV via ecosystem file");
   const connections = {
     postgres: {
       connection: {

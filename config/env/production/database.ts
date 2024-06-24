@@ -3,14 +3,13 @@ import path from "path";
 export default ({ env }) => {
   const client = env("DATABASE_CLIENT");
   console.log("FOLDER ENV CONFIG:", env("DATABASE_CLIENT"));
-  console.log("Database host:", env("DATABASE_HOST"));
-  console.log("Database host:", env("DATABASE_PORT"));
-  console.log("Database name:", env("DATABASE_NAME"));
+  console.log("Database name:", env("PROD_DATABASE_NAME"));
+  console.log("Database udrtname:", env("PROD_DATABASE_USERNAME"));
   const connections = {
     postgres: {
       connection: {
-        host: env("PROD_DATABASE_HOST"),
-        port: env.int("PROD_DATABASE_PORT"),
+        host: env("DATABASE_HOST"),
+        port: env.int("DATABASE_PORT"),
         database: env("PROD_DATABASE_NAME"),
         user: env("PROD_DATABASE_USERNAME"),
         password: env("PROD_DATABASE_PASSWORD"),
