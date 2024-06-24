@@ -30,7 +30,7 @@ module.exports = {
         TRANSFER_TOKEN_SALT: "tobemodified",
         JWT_SECRET: "Al8A3kQKS6h1Vp1+kd1lWQ==",
         HOST: "0.0.0.0",
-        DATABASE_HOST: "127.0.0.1",
+        DATABASE_HOST: "localhost",
         DATABASE_PORT: 5432,
         DATABASE_NAME: "strapi_motin_prod",
         DATABASE_USERNAME: "julie",
