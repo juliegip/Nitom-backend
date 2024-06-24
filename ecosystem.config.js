@@ -4,7 +4,6 @@ module.exports = {
       name: "strapi-app",
       script: "npm",
       args: "run start",
-      cwd: "/.",
       interpreter: "node",
       env: {
         APP_KEYS: "myKeyA,myKeyB",
