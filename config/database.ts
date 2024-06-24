@@ -2,7 +2,7 @@ import path from "path";
 
 export default ({ env }) => {
   const client = env("DATABASE_CLIENT");
-  console.log("Database client:", env("DATABASE_CLIENT"));
+  console.log("Default Database client:", env("DATABASE_CLIENT"));
   console.log("Database host:", env("DATABASE_HOST"));
   console.log("Database host:", env("DATABASE_PORT"));
   const connections = {
