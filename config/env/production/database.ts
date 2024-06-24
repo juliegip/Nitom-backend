@@ -9,11 +9,11 @@ export default ({ env }) => {
   const connections = {
     postgres: {
       connection: {
-        host: env("DATABASE_HOST"),
-        port: env.int("DATABASE_PORT"),
-        database: env("DATABASE_NAME"),
-        user: env("DATABASE_USERNAME"),
-        password: env("DATABASE_PASSWORD"),
+        host: env("PROD_DATABASE_HOST"),
+        port: env.int("PROD_DATABASE_PORT"),
+        database: env("PROD_DATABASE_NAME"),
+        user: env("PROD_DATABASE_USERNAME"),
+        password: env("PROD_DATABASE_PASSWORD"),
         ssl: env.bool("DATABASE_SSL", false),
         schema: env("DATABASE_SCHEMA", "public"),
       },
